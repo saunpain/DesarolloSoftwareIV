@@ -1,0 +1,28 @@
+* {
+    font-family:'Verdana';
+    color:white;
+}
+
+header{
+    background-color: #96B6C5;
+    height: 375px;
+}
+
+header h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+img{
+    width: 250px;
+    height: auto;
+}
+
+hr{
+    height: 10px;
+    background-color: #F1F0E8;
+}
+
+#c1.columna{background-color: #E5D283;}
+
+#c2.columna{background-color: #96B6C5;}

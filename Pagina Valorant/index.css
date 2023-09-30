@@ -1,0 +1,74 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    background-color: black;
+}
+
+body, nav, header{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 650px;
+    background: url("img/bg.png");
+    background-size: cover;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 125px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu-item{
+    padding: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cuadritos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textito{
+    color: white;
+}
+
+.titulo{
+    color: white;
+    font-size: 100px;
+}
+
+.botoncito{
+    color: white;
+    background-color: red;
+    padding: 25px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.bordecito{
+    border: 2px, solid, grey;
+    padding: 5px;
+
+}
+
+.jugar{
+    padding-left: 35px;
+    padding-right: 35px;
+}

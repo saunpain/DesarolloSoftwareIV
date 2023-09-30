@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para CV</title>
+</head>
+<body>
+    <header>
+        <h1><center>Formulario de CV</center></h1>
+    </header>
+    <form action="" method="action">
+        <fieldset>
+            <legend><h3>Seccion de Experiencias</h3></legend>
+            <textarea name="experiencias" rows="5" cols="50" placeholder="Cuentanos acerca de tu experiencia laboral" required></textarea>
+        </fieldset><br><br>
+        <fieldset>
+            <legend><h3>Seccion de Educacion</h3></legend>
+            <input type="checkbox" name="primaria" id="primaria"><label for="primaria">Primaria</label>
+            <input type="text" name="prim" id="prim"><label for="prim"></label><br><br>
+            <input type="checkbox" name="premedia" id="premedia"><label for="premedia">Pre-media</label>
+            <input type="text" name="prem" id="prem"><label for="prem"></label><br><br>
+            <input type="checkbox" name="media" id="media"><label for="media">Media</label>
+            <input type="text" name="med" id="med"><label for="med"></label><br><br>
+            <input type="checkbox" name="universidad" id="universidad"><label for="universidad">Estudios Universitarios</label>
+            <input type="text" name="u" id="u"><label for="u"></label><br><br>
+            <input type="checkbox" name="otros" id="otros"><label for="otros">Otros</label>
+            <input type="text" name="o" id="o"><label for="o"></label>
+        </fieldset><br><br>
+        <fieldset>
+            <legend><h3>Seccion de Conocimientos</h3></legend>
+            <textarea name="conocimientos" rows="5" cols="50" placeholder="Enlista tus conocimientos separados por comas" required></textarea>
+        </fieldset><br><br>
+        <fieldset>
+            <legend><h3>Seccion de Datos Generales</h3></legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" required><br>
+            <label for="nacionalidad">Nacionalidad:</label><br>
+            <input type="text" name="nacionalidad" id="nacionalidad" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label for="telefono">Tel.:</label><br>
+            <input type="tel" name="telefono" id="telefono" required><br>
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="edad" id="edad" required><br>
+            <label for="fecha">Fecha de Nacimiento:</label><br>
+            <input type="date" name="fecha" if="fecha" required><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend><h3>Seccion Abierta</h3></legend>
+            <textarea name="abierto" rows="5" cols="50" placeholder="Cuentanos lo que sea en esta seccion" required></textarea>
+        </fieldset><br><br>
+        <fieldset>
+            <label for="foto">Adjunta una foto tuya</label><br><br>
+            <input type="file" name="foto" id="foto" required>
+        </fieldset><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

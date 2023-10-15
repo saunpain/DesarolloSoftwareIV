@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplos de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function cambiarColorParrafo() {
+            document.getElementById("parrafoColor").style.color = "red";
+        }
+
+        function anadirTextoParrafo() {
+            var parrafo = document.getElementById("parrafoTexto");
+            parrafo.textContent += "Patrick ";
+        }
+
+        function concatenarTextos() {
+            var texto1 = "Hola, ";
+            var texto2 = "Patrick!";
+            alert(texto1 + texto2);
+        }
+
+        function eliminarElementoLista() {
+            var lista = document.getElementById("listaDesplegable");
+            lista.removeChild(lista.options[1]);
+        }
+
+        function irAYoutube() {
+            window.location.href = "https://www.youtube.com/watch?v=w4QRcpNg57s";
+        }
+
+        function mostrarMensaje() {
+            var nombre = document.getElementById("nombreInput").value;
+            alert("Hola, " + nombre);
+        }
+
+        function NombreConsola() {
+            var nombre = document.getElementById("nombreInput").value;
+            console.log(nombre);
+        }
+
+        function mostrarEstadoCheckbox() {
+            var checkbox = document.getElementById("checkbox");
+            alert("El estado del checkbox es: " + checkbox.checked);
+        }
+
+        function mostrarEstado() {
+            var radio = document.querySelector('input[name="radio"]');
+            alert("El estado del radiobutton es: " + radio.checked);
+        }
+
+        function validarNumeros() {
+            var input = document.getElementById("numeroInput");
+            var valor = input.value;
+            if (isNaN(valor)) {
+                alert("Solo se permiten números.");
+                input.value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Descripción del ejemplo</th>
+            <th>Ejemplo</th>
+            <th>Botón para activar el ejemplo</th>
+        </tr>
+        <tr>
+            <td>Cambiar el color de párrafo</td>
+            <td><p id="parrafoColor">Cambio de color</p></td>
+            <td><button onclick="cambiarColorParrafo()">Activar</button></td>
+        </tr>
+        <tr>
+            <td>Añadir texto a un párrafo (uso de operadores)</td>
+            <td><p id="parrafoTexto">Texto inicial.</p></td>
+            <td><button onclick="anadirTextoParrafo()">Activar</button></td>
+        </tr>
+        <tr>
+            <td>Concatenar el valor de dos textos (uso de operadores)</td>
+            <td></td>
+            <td><button onclick="concatenarTextos()">Activar</button></td>
+        </tr>
+        <tr>
+            <td>Eliminar valores de una lista desplegable (uso de atributos de etiqueta)</td>
+            <td><select id="listaDesplegable">
+                <option>Elemento 1</option>
+                <option>Elemento 2</option>
+                <option>Elemento 3</option>
+            </select></td>
+            <td><button onclick="eliminarElementoLista()">Activar</button></td>
+        </tr>
+        <tr>
+            <td>Un botón que me lleve a un video de YouTube (con JS)</td>
+            <td></td>
+            <td><button onclick="irAYoutube()">Activar</button></td>
+        </tr>
+        <tr>
+            <td>Mandar un mensaje al usuario con el nombre ingresado</td>
+            <td><input type="text" id="nombreInput" placeholder="Nombre"></td>
+            <td><button onclick="mostrarMensaje()">Activar</button></td>
+        </tr>
+        <tr>
+            <td>Mandar el nombre a la consola de JS del navegador</td>
+            <td><input type="text" id="nombreInput" placeholder="Nombre"></td>
+            <td><button onclick="NombreConsola()">Activar</button></td>
+        </tr>
+        <tr>
+            <td>Un checkbox e imprimir su estado</td>
+            <td><input type="checkbox" id="checkbox"> Checkbox</td>
+            <td><button onclick="mostrarEstadoCheckbox()">Activar</button></td>
+        </tr>
+        <tr>
+            <td>Un radiobutton e imprimir su estado</td>
+            <td><input type="radio" name="radio"> Radio</td>
+            <td><button onclick="mostrarEstado()">Activar</button></td>
+        </tr>
+        <tr>
+            <td>Validación de un campo para permitir solo números</td>
+            <td><input type="text" id="numeroInput" placeholder="Solo números"></td>
+            <td><button onclick="validarNumeros()">Activar</button></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+

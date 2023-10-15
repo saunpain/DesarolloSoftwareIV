@@ -153,11 +153,13 @@ footer{
 }
 
 .producto{
+    border: 10px;
     border: black;
-    border-radius: 20px;
     width: 247px;
     margin-right: 50px;
     float:left;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    transition: .5s al ease;
 }
 
 .descripcion-producto{

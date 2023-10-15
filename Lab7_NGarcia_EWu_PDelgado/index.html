@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 7</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <h1>Laboratorio 7</h1>
+            <h2>Laboratorio de JavaScript</h2>
+        </div>
+    </header>
+    <div class="body">
+        <div class="tabla">
+            <table class="tabla" border="1">
+                <thead>
+                    <th>Descripcion del ejemplo</th>
+                    <th>Ejemplo</th>
+                    <th>Boton para activar el ejemplo</th>
+                </thead>
+                <tr class="fila">
+                    <td class="columna1">Cambiar el color de un parrafo (Uso de Style)</td>
+                    <td class="columna2" id="textoColor">Texto que cambia de color</td>
+                    <td class="columna3"><button onClick="cambiarColor()">Botón</button></td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">Añadir texto a un parrafo (Uso de operadores)</td>
+                    <td class="columna2"><p id="masTexto">Parrafo. </p></td>
+                    <td class="columna3"><button onClick="masTexto()">Botón</button></td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">Concatenar el valor de 2 textos (Uso de operadores)</td>
+                    <td class="columna2">
+                        <input type="text" id="texto1" placeholder="Texto1">
+                        <input type="text" id="texto2" placeholder="Texto2">
+                        <p id="resultado"></p>
+                    </td>
+                    <td class=columna3><button onClick="concatenarTexto()">Boton</td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">Eliminar valores de una lista desplegable <br> 
+                        (Uso de atributos de etiqueta)</td>
+                    <td class="columna2">
+                        <select id="listaDesplegable">
+                            <option value="opcion1" id="opcion1">Opción 1</option>
+                            <option value="opcion2" id="opcion2">Opción 2</option>
+                            <option value="opcion3" id="opcion3">Opción 3</option>
+                            <option value="opcion4" id="opcion4">Opción 4</option>
+                        </select>
+                    </td>
+                    <td class="columna3"><button onClick="eliminarValorLista()">Botón</button></td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">Un botón que lleve a un video de Youtube <br> 
+                        (Uso de href en js)</td>
+                    <td class="columna2"><p>Presiona el boton para ir a Youtube</p></td>
+                    <td class="columna3"><button id="botonVideo" onClick="video()">Botón</button></td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">Mandar un mensaje al usuario con el nombre colocado <br>
+                        en el 1.3 (Uso de alert)</td>
+                    <td class="columna2"><p>Mensaje al usuario</p></td>
+                    <td class="columna3"><button onClick="mensaje()">Botón</button></td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">Mandar el nombre a la consola js del navegador <br> 
+                        (Uso de console)</td>
+                    <td class="columna2">Nombre a la consola</td>
+                    <td class="columna3"><button onClick="consola()">Botón</button></td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">Un check, e imprimir su estado <br>
+                        (Uso de atributos del checkbox)</td>
+                    <td class="columna2"><label for="cajaCheck" id="labelCheck">Sin presionar</label></td>
+                    <td class="columna3"><input type="checkbox" id="cajaCheck" onClick="checkCaja()"></td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">Un radio, e imprimir su estado <br>
+                        (Uso de atributos del radio button)</td>
+                    <td class="columna2"><label for="radioCheck" id="labelRadio">Sin presionar</label></td>
+                    <td class="columna3"><input type="radio" id="radioCheck" onClick="checkRadio()"></td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">Una validación de un campo, si este es un <br>
+                        número enviar un mensaje que diga que solo se <br>
+                        permiten teclas (Investigar con que función se hace)</td>
+                    <td class="columna2">
+                        <input type="text" id="campo" placeholder="Ingresa solo letras"> <!--pattern="^[A-Za-z]+$"-->
+                        <p id="mensajeValidado"></p>
+                    </td>
+                    <td class="columna3"><button onClick="validarCampo()">Validar</button></td>
+                </tr>
+                <tr class="fila">
+                    <td class="columna1">busque un API público y mapee al menos 3 datos dentro<br>
+                        de la tabla </td>
+                    <td class="columna2">Se muestran la imagen, el nombre y la descripcion de un anime</td>
+                    <td class="columna3"><input type="number" id="animeId" onchange="recargarDatos()"></td>
+                </tr>
+                <tbody id="contenedor">
+        
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="contenedor-footer">
+            <img src="img/Logo FISC.png" alt="">
+            <img src="img/Logo UTP.png" alt="">
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
+

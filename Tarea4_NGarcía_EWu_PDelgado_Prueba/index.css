@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Bell Gothic Std, Trebuchet MS, Arial, Helvetica;
+    background-image: url('Imagen/Edificio.jpg');
+    background-size: cover;
+}
+
+.cajota {
+    text-align: center;
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+}
+
+
+.caja input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cajita {
+    display: flex;
+    align-items: center;
+  
+}
+
+.cajita label {
+  
+    white-space: nowrap;
+    font-size: 15px;
+
+}
+
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px ;
+}
+
+button:hover{
+    background-color: #83bbf6;
+}
+
+.cargador {
+    display: none;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-top: 4px solid #007BFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.mensaje-resultado {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.caja input.error {
+    border: 2px solid red;
+    color: red;
+}
+
+.mensajeError {
+    color: red;
+}
+
+
+.caja input.exitoso {
+    border: 2px solid green;
+    color: green;
+}
+
+.mensajeExitoso {
+    color:green;
+}
+
+
+.sinsubrayar {
+    text-decoration: none;
+    color: #409eff;
+}

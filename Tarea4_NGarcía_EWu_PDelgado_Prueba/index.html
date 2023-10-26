@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <section class="cajota">
+
+        <h1>Bienvenido</h1>
+
+        <div class="caja">
+            <input type="text" id="usuario" placeholder="Usuario" onclick="limpiarError(this)">
+            <input type="password" id="contraseña" placeholder="Contraseña" onclick="limpiarError(this)">
+
+            <div class="cajita"> 
+               
+                <label for="mostrarContraseña">Mostrar Contraseña</label>
+                <input type="checkbox" id="mostrarContraseña" onclick="alterPassword(this)">
+            </div>
+
+        </div>
+
+        <button id="botonIniciar" onclick="signUp()">Iniciar Sesión</button>
+        <div id="loader" class="cargador"></div>
+        <div id="mensajeResultado" class="mensaje-resultado"></div>
+        <p><a href="#" class="sinsubrayar">¿Olvidaste tu contraseña?</a></p>
+        <p>¿No tienes cuenta? <a href="#" class="sinsubrayar">Regístrate</a></p>
+
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>

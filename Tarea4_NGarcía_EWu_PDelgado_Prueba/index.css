@@ -1,24 +1,49 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Bell Gothic Std, Trebuchet MS, Arial, Helvetica;
     background-image: url('Imagen/Edificio.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    margin: 0;
+    font-family: Bell Gothic Std, Trebuchet MS, Arial, Helvetica;
+    position: relative;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 40px; 
+    left: 20px; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+
+}
+
+header h2 {
+    margin: 0;
+    font-size: 30px;
+    color: white;
 }
 
 .cajota {
     text-align: center;
-    background-color: #fff;
-    padding: 45px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
     height: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }
-
 
 .caja input {
     width: 100%;
@@ -32,16 +57,14 @@ body {
 .cajita {
     display: flex;
     align-items: center;
-  
+    padding-right: 145px; 
 }
 
 .cajita label {
   
     white-space: nowrap;
     font-size: 15px;
-
 }
-
 
 button {
     background-color: #007BFF;

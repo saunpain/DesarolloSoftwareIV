@@ -1,0 +1,126 @@
+body {
+    background-image: url('Imagen/Edificio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    margin: 0;
+    font-family: Bell Gothic Std, Trebuchet MS, Arial, Helvetica;
+    position: relative;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 40px; 
+    left: 20px; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+
+}
+
+header h2 {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+}
+
+.cajota {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.caja input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cajita {
+    display: flex;
+    align-items: center;
+    padding-right: 145px; 
+}
+
+.cajita label {
+  
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px ;
+}
+
+button:hover{
+    background-color: #83bbf6;
+}
+
+.cargador {
+    display: none;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-top: 4px solid #007BFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.mensaje-resultado {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.caja input.error {
+    border: 2px solid red;
+    color: red;
+}
+
+.mensajeError {
+    color: red;
+}
+
+
+.caja input.exitoso {
+    border: 2px solid green;
+    color: green;
+}
+
+.mensajeExitoso {
+    color:green;
+}
+
+
+.sinsubrayar {
+    text-decoration: none;
+    color: #409eff;
+}
